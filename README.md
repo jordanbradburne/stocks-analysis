@@ -4,38 +4,25 @@
 
 ### Background
 
-#The purpose of this project was to use Visual Basic for Applications (VBA) in Excel to help out my friend Steve who had just graduated with a
-#finance degree. His parents decided to be his first clients and wanted to invest in some sort of green energy. They hadn't done too much 
-#research, so Steve's Parents decided to invest their money into DAQO New Energy Corp (DQ) who basically make silicon wafers for solar pannels.
+The purpose of this project was to use Visual Basic for Applications (VBA) in Excel to help out my friend Steve who had just graduated with a finance degree. His parents decided to be his first clients and wanted to invest in some sort of green energy. They hadn't done too much research, so Steve's Parents decided to invest their money into DAQO New Energy Corp (DQ) who basically make silicon wafers for solar pannels.
 
 ### Purpose
 
-#Steve made a promise to look into DAQO, but felt that they needed to diversify their funds. So he wanted to analyze different green energy 
-#stocks, as well as DAQO stock. Steve gave me an excel file that had all of the data he needed me to analyze. Using VBA, I created code to 
-#help Steve analyze any stock to minimize error and to visually undertand the trends.
+Steve made a promise to look into DAQO, but felt that they needed to diversify their funds. So he wanted to analyze different green energy stocks, as well as DAQO stock. Steve gave me an excel file that had all of the data he needed me to analyze. Using VBA, I created code to help Steve analyze any stock to minimize error and to visually undertand the trends.
 
 ## Analysis: 
 
 ### Process:
 
-#In order to help steve analyze stocks, I created code in VBA. Steve asked that I find the total daily volume (number of shares traded throughout
-#the day) and yearly return for each stock (percentage difference in price from beginning of the year to the end). So I created 3 sections: 
-#"Year", "Total Daily Volume" and "Return".
+In order to help steve analyze stocks, I created code in VBA. Steve asked that I find the total daily volume (number of shares traded throughout the day) and yearly return for each stock (percentage difference in price from beginning of the year to the end). So I created 3 sections: "Year", "Total Daily Volume" and "Return".
 
-#To understand how actively any stock was traded in a certain year, I summed up all of the daily volume for DQ to get the yearly volume and a 
-#rough idea of how often it was traded. And to understand how a stock performed in a certain year, I calculated the yearly return for any stock by 
-#looping through all the rows, checked if the current row was the first row of DQ's data and then, if so, set the starting price to the 
-#closing price in the current row. After, I checked if the ticker in the current row was that stock and if the ticker in the previous row was not 
-#that stock.
+#To understand how actively any stock was traded in a certain year, I summed up all of the daily volume for DQ to get the yearly volume and a rough idea of how often it was traded. And to understand how a stock performed in a certain year, I calculated the yearly return for any stock by looping through all the rows, checked if the current row was the first row of DQ's data and then, if so, set the starting price to the closing price in the current row. After, I checked if the ticker in the current row was that stock and if the ticker in the previous row was not that stock.
 
-#To run analyses on all of the stocks for any year, not just DQ, I created a program flow that looped through all of the tickers. Also, since 
-#Steve may want to look at a different set of stocks in the future, I created a flexible macro for running multiple stocks for any year.
+To run analyses on all of the stocks for any year, not just DQ, I created a program flow that looped through all of the tickers. Also, since Steve may want to look at a different set of stocks in the future, I created a flexible macro for running multiple stocks for any year.
 
-#In the future, Steve may want to perform his analysis on larger datasets so Steve wanted to see how fast his VBA code will compile the results. 
-#To help Steve, I added a script that calculated how long the code took to execute.
+In the future, Steve may want to perform his analysis on larger datasets so Steve wanted to see how fast his VBA code will compile the results. To help Steve, I added a script that calculated how long the code took to execute.
 
-#I also refactored the code that collected all of the same information in order to see if I could successfully make the VBA script run faster.
-#Seen below is the Original Script and the Refractored Script.
+I also refactored the code that collected all of the same information in order to see if I could successfully make the VBA script run faster. Seen below is the Original Script and the Refractored Script.
 
 ### Original Script:
 
@@ -301,8 +288,7 @@ End Sub
 
 ### Times
 
-#Comparing the time for both the original and the refactored script, it is very clear that the refractored script runs faster. (This is shown 
-#below:)
+Comparing the time for both the original and the refactored script, it is very clear that the refractored script runs faster. (This is shown below:)
 
 ### Original Script Times:
 
@@ -316,31 +302,26 @@ End Sub
 
 ### Final Results
 
-#Now looking at the actual results of the stock performance between 2017 and 2018, it shows some very interesting data.
+Now looking at the actual results of the stock performance between 2017 and 2018, it shows some very interesting data.
 <img width="277" alt="2017" src="https://user-images.githubusercontent.com/85847344/124397837-260e3500-dcc7-11eb-9869-bd9d7bfce531.png">
 <img width="252" alt="2018" src="https://user-images.githubusercontent.com/85847344/124397839-27d7f880-dcc7-11eb-83ba-2737cdb7f672.png">
 
-#As seen above, it is clear that in 2017 DQ had the highest return and most every stock, except for TERP, had a positve return. As for 2018, only 
-#ENPH and RUN had a positive return. Although RUN only had a 5.5% return in 2017, they did have a 81.9% return in 2018, and ENPH had 129.5% in 
-#2017 and a 81.9% return in 2018.
+As seen above, it is clear that in 2017 DQ had the highest return and most every stock, except for TERP, had a positve return. As for 2018, only ENPH and RUN had a positive return. Although RUN only had a 5.5% return in 2017, they did have a 81.9% return in 2018, and ENPH had 129.5% in 2017 and a 81.9% return in 2018.
 
 ## Summary
 
-#Summary: In a summary statement, address the following questions.
+Summary: In a summary statement, address the following questions.
 
 ### Advantages and Disadvantages of General Code Refactoring
 
-#The advantages of refactoring your code in general is that is more concise. It can help keep the code manageable ithout major overhauls. It can 
-#also help the code run faster.
+The advantages of refactoring your code in general is that is more concise. It can help keep the code manageable ithout major overhauls. It can also help the code run faster.
 
-#The disadvantages of refactoring your code in general is that if too refractored, there are risks in the confusment of developers or even 
-#breaking the product.
+The disadvantages of refactoring your code in general is that if too refractored, there are risks in the confusment of developers or even breaking the product.
 
 ### Advantages and Disadvantages of Refactoring This Stock Code
 
-#The largest advantage in this specific kind of refractoing of the code is the time. The time the refactored code ran was noticeably faster than 
-#the original script.
+The largest advantage in this specific kind of refractoing of the code is the time. The time the refactored code ran was noticeably faster than the original script.
 
-#The possible disadvantages of this refractored is that Steve may not be able to fully understand how the code is working as well as he would the 
+The possible disadvantages of this refractored is that Steve may not be able to fully understand how the code is working as well as he would the 
 original script. That being said, there really aren't too many changes and the advantages in this case far outway the negatives.
 
