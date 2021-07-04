@@ -4,8 +4,8 @@
 
 ### Background
 
-#The purpose of this project was to use Visual Basic for Applications (VBA) in Excel to help out my friend Steve who had just graduated with a#
-finance degree. His parents decided to be his first clients and wanted to invest in some sort of green energy. They hadn't done too much 
+#The purpose of this project was to use Visual Basic for Applications (VBA) in Excel to help out my friend Steve who had just graduated with a
+#finance degree. His parents decided to be his first clients and wanted to invest in some sort of green energy. They hadn't done too much 
 #research, so Steve's Parents decided to invest their money into DAQO New Energy Corp (DQ) who basically make silicon wafers for solar pannels.
 
 ### Purpose
