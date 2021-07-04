@@ -290,37 +290,48 @@ Sub AllStocksAnalysisRefactored()
 
 End Sub
 
-### Results
-#Comparing the time for both the original and the refactored script, it is very clear that the refractored script runs faster.
+## Results
+
+### Times
+#Comparing the time for both the original and the refactored script, it is very clear that the refractored script runs faster. (This is shown 
+#below:)
 
 ### Original Script Times:
 
-<img width="408" alt="PREVBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397472-d75f9b80-dcc4-11eb-8714-dd2112870eca.png">
-<img width="400" alt="PREVBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397473-d7f83200-dcc4-11eb-950e-bae4e45b7c4d.png">
+<img width="408" alt="PREVBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397472-d75f9b80-dcc4-11eb-8714-
+                                                  dd2112870eca.png">
+<img width="400" alt="PREVBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397473-d7f83200-dcc4-11eb-950e-
+                                                  bae4e45b7c4d.png">
 
 ### Refractored Script Times
-<img width="409" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397479-e0506d00-dcc4-11eb-8e2a-afbd5971f83f.png">
-<img width="400" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397482-e21a3080-dcc4-11eb-9a14-f5cdd866245b.png">
+<img width="409" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397479-e0506d00-dcc4-11eb-8e2a-
+                                               afbd5971f83f.png">
+<img width="400" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397482-e21a3080-dcc4-11eb-9a14-
+                                               f5cdd866245b.png">
 
-#Now, looking at the actual results of the stock performance between 2017 and 2018, it is very interesting.
+### Final Results
+#Now looking at the actual results of the stock performance between 2017 and 2018, it shows some very interesting data.
+<img width="277" alt="2017" src="https://user-images.githubusercontent.com/85847344/124397837-260e3500-dcc7-11eb-9869-bd9d7bfce531.png">
+<img width="252" alt="2018" src="https://user-images.githubusercontent.com/85847344/124397839-27d7f880-dcc7-11eb-83ba-2737cdb7f672.png">
 
-
-Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script 
-and the refactored script.
-The analysis is well described with screenshots and code
-
-
-
+#As seen above, it is clear that in 2017 DQ had the highest return and most every stock, except for TERP, had a positve return. As for 2018, only 
+#ENPH and RUN had a positive return. Although RUN only had a 5.5% return in 2017, they did have a 81.9% return in 2018, and ENPH had 129.5% in 
+#2017 and a 81.9% return in 2018.
 
 ## Summary
 #Summary: In a summary statement, address the following questions.
 
-advantages and disadvantages of refactoring code in general
-#Advantages: more consise. runs faster
-#Disadvantages: if too refractored it can be hard to debug because of not knowing which part is going wrong. harder to look at code for fist time and understand what is going on
-helps keep it manageable without major overhauls but may not set the app up for new development technologies or application languages. Rewriting code enables foundational changes to the code but risks confusing developers or even breaking the product.
+### Advantages and Disadvantages of General Code Refactoring
+#The advantages of refactoring your code in general is that is more concise. It can help keep the code manageable ithout major overhauls. It can 
+#also help the code run faster.
 
-advantages and disadvantages of refactoring this stock code
-#Advantages: The largest advantage is the time
-#Disadvantages: Steve may not be able to understand how the code is working as well, but that shouldn't really matter since the coding part isn't #his issue
+#The disadvantages of refactoring your code in general is that if too refractored, there are risks in the confusment of developers or even 
+#breaking the product.
+
+### Advantages and Disadvantages of Refactoring This Stock Code
+#The largest advantage in this specific kind of refractoing of the code is the time. The time the refactored code ran was noticeably faster than 
+#the original script.
+
+#The possible disadvantages of this refractored is that Steve may not be able to fully understand how the code is working as well as he would the 
+original script. That being said, there really aren't too many changes and the advantages in this case far outway the negatives.
 
