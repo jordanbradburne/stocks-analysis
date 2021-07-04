@@ -1,6 +1,6 @@
 # Stocks-Analysis
 
-## Overview of Project: Explain the purpose of this analysis.
+## Overview of Project
 ### Background
 #The purpose of this project was to use Visual Basic for Applications (VBA) in Excel to help out my friend Steve who had just graduated with a 
 #finance degree. His parents decided to be his first clients and wanted to invest in some sort of green energy. They hadn't done too much 
@@ -11,9 +11,7 @@
 #stocks, as well as DAQO stock. Steve gave me an excel file that had all of the data he needed me to analyze. Using VBA, I created code to 
 #help Steve analyze any stock to minimize error and to visually undertand the trends.
 
-## Results: 
-Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
-
+## Analysis: 
 ### Process:
 #In order to help steve analyze stocks, I created code in VBA. Steve asked that I find the total daily volume (number of shares traded throughout
 #the day) and yearly return for each stock (percentage difference in price from beginning of the year to the end). So I created 3 sections: 
@@ -25,9 +23,11 @@ Using images and examples of your code, compare the stock performance between 20
 #closing price in the current row. After, I checked if the ticker in the current row was that stock and if the ticker in the previous row was not 
 #that stock.
 
-#To run analyses on all of the stocks for any year, not just DQ, I created a program flow that looped through all of the tickers. Also, since #Steve may want to look at a different set of stocks in the future, I created a flexible macro for running multiple stocks for any year.
+#To run analyses on all of the stocks for any year, not just DQ, I created a program flow that looped through all of the tickers. Also, since 
+#Steve may want to look at a different set of stocks in the future, I created a flexible macro for running multiple stocks for any year.
 
-#In the future, Steve may want to perform his analysis on larger datasets so Steve wanted to see how fast his VBA code will compile the results. #To help Steve, I added a script that calculated how long the code took to execute.
+#In the future, Steve may want to perform his analysis on larger datasets so Steve wanted to see how fast his VBA code will compile the results. 
+#To help Steve, I added a script that calculated how long the code took to execute.
 
 #I also refactored the code that collected all of the same information in order to see if I could successfully make the VBA script run faster.
 #Seen below is the Original Script and the Refractored Script.
@@ -290,13 +290,37 @@ Sub AllStocksAnalysisRefactored()
 
 End Sub
 
+### Results
+#Comparing the time for both the original and the refactored script, it is very clear that the refractored script runs faster.
+
+### Original Script Times:
+
+<img width="408" alt="PREVBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397472-d75f9b80-dcc4-11eb-8714-dd2112870eca.png">
+<img width="400" alt="PREVBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397473-d7f83200-dcc4-11eb-950e-bae4e45b7c4d.png">
+
+### Refractored Script Times
+<img width="409" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397479-e0506d00-dcc4-11eb-8e2a-afbd5971f83f.png">
+<img width="400" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397482-e21a3080-dcc4-11eb-9a14-f5cdd866245b.png">
+
+#Now, looking at the actual results of the stock performance between 2017 and 2018, it is very interesting.
+
+
+Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script 
+and the refactored script.
 The analysis is well described with screenshots and code
 
+
+
+
+## Summary
 #Summary: In a summary statement, address the following questions.
 
-There is a detailed statement on the advantages and disadvantages of refactoring code in general
-There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script 
+advantages and disadvantages of refactoring code in general
+#Advantages: more consise. runs faster
+#Disadvantages: if too refractored it can be hard to debug because of not knowing which part is going wrong. harder to look at code for fist time and understand what is going on
+helps keep it manageable without major overhauls but may not set the app up for new development technologies or application languages. Rewriting code enables foundational changes to the code but risks confusing developers or even breaking the product.
 
-#What are the advantages or disadvantages of refactoring code?
+advantages and disadvantages of refactoring this stock code
+#Advantages: The largest advantage is the time
+#Disadvantages: Steve may not be able to understand how the code is working as well, but that shouldn't really matter since the coding part isn't #his issue
 
-#How do these pros and cons apply to refactoring the original VBA script?
