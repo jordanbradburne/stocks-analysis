@@ -1,18 +1,23 @@
 # Stocks-Analysis
 
 ## Overview of Project
+
 ### Background
+
 #The purpose of this project was to use Visual Basic for Applications (VBA) in Excel to help out my friend Steve who had just graduated with a 
 #finance degree. His parents decided to be his first clients and wanted to invest in some sort of green energy. They hadn't done too much 
 #research, so Steve's Parents decided to invest their money into DAQO New Energy Corp (DQ) who basically make silicon wafers for solar pannels.
 
 ### Purpose
+
 #Steve made a promise to look into DAQO, but felt that they needed to diversify their funds. So he wanted to analyze different green energy 
 #stocks, as well as DAQO stock. Steve gave me an excel file that had all of the data he needed me to analyze. Using VBA, I created code to 
 #help Steve analyze any stock to minimize error and to visually undertand the trends.
 
 ## Analysis: 
+
 ### Process:
+
 #In order to help steve analyze stocks, I created code in VBA. Steve asked that I find the total daily volume (number of shares traded throughout
 #the day) and yearly return for each stock (percentage difference in price from beginning of the year to the end). So I created 3 sections: 
 #"Year", "Total Daily Volume" and "Return".
@@ -33,6 +38,7 @@
 #Seen below is the Original Script and the Refractored Script.
 
 ### Original Script:
+
 Sub yearValueAnalysis()
     
     Dim startTime As Single
@@ -168,6 +174,7 @@ Sub yearValueAnalysis()
 End Sub
 
 ### Refractored Script:
+
 Sub AllStocksAnalysisRefactored()
     Dim startTime As Single
     Dim endTime  As Single
@@ -293,23 +300,22 @@ End Sub
 ## Results
 
 ### Times
+
 #Comparing the time for both the original and the refactored script, it is very clear that the refractored script runs faster. (This is shown 
 #below:)
 
 ### Original Script Times:
 
-<img width="408" alt="PREVBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397472-d75f9b80-dcc4-11eb-8714-
-                                                  dd2112870eca.png">
-<img width="400" alt="PREVBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397473-d7f83200-dcc4-11eb-950e-
-                                                  bae4e45b7c4d.png">
+<img width="408" alt="PREVBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397472-d75f9b80-dcc4-11eb-8714-dd2112870eca.png">
+
+<img width="400" alt="PREVBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397473-d7f83200-dcc4-11eb-950e-bae4e45b7c4d.png">
 
 ### Refractored Script Times
-<img width="409" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397479-e0506d00-dcc4-11eb-8e2a-
-                                               afbd5971f83f.png">
-<img width="400" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397482-e21a3080-dcc4-11eb-9a14-
-                                               f5cdd866245b.png">
+<img width="409" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/85847344/124397479-e0506d00-dcc4-11eb-8e2a-afbd5971f83f.png">
+<img width="400" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/85847344/124397482-e21a3080-dcc4-11eb-9a14-f5cdd866245b.png">
 
 ### Final Results
+
 #Now looking at the actual results of the stock performance between 2017 and 2018, it shows some very interesting data.
 <img width="277" alt="2017" src="https://user-images.githubusercontent.com/85847344/124397837-260e3500-dcc7-11eb-9869-bd9d7bfce531.png">
 <img width="252" alt="2018" src="https://user-images.githubusercontent.com/85847344/124397839-27d7f880-dcc7-11eb-83ba-2737cdb7f672.png">
@@ -319,9 +325,11 @@ End Sub
 #2017 and a 81.9% return in 2018.
 
 ## Summary
+
 #Summary: In a summary statement, address the following questions.
 
 ### Advantages and Disadvantages of General Code Refactoring
+
 #The advantages of refactoring your code in general is that is more concise. It can help keep the code manageable ithout major overhauls. It can 
 #also help the code run faster.
 
@@ -329,6 +337,7 @@ End Sub
 #breaking the product.
 
 ### Advantages and Disadvantages of Refactoring This Stock Code
+
 #The largest advantage in this specific kind of refractoing of the code is the time. The time the refactored code ran was noticeably faster than 
 #the original script.
 
