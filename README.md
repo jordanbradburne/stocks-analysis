@@ -16,7 +16,7 @@ Steve made a promise to look into DAQO, but felt that they needed to diversify t
 
 In order to help steve analyze stocks, I created code in VBA. Steve asked that I find the total daily volume (number of shares traded throughout the day) and yearly return for each stock (percentage difference in price from beginning of the year to the end). So I created 3 sections: "Year", "Total Daily Volume" and "Return".
 
-#To understand how actively any stock was traded in a certain year, I summed up all of the daily volume for DQ to get the yearly volume and a rough idea of how often it was traded. And to understand how a stock performed in a certain year, I calculated the yearly return for any stock by looping through all the rows, checked if the current row was the first row of DQ's data and then, if so, set the starting price to the closing price in the current row. After, I checked if the ticker in the current row was that stock and if the ticker in the previous row was not that stock.
+To understand how actively any stock was traded in a certain year, I summed up all of the daily volume for DQ to get the yearly volume and a rough idea of how often it was traded. And to understand how a stock performed in a certain year, I calculated the yearly return for any stock by looping through all the rows, checked if the current row was the first row of DQ's data and then, if so, set the starting price to the closing price in the current row. After, I checked if the ticker in the current row was that stock and if the ticker in the previous row was not that stock.
 
 To run analyses on all of the stocks for any year, not just DQ, I created a program flow that looped through all of the tickers. Also, since Steve may want to look at a different set of stocks in the future, I created a flexible macro for running multiple stocks for any year.
 
@@ -163,6 +163,7 @@ End Sub
 ### Refractored Script:
 
 Sub AllStocksAnalysisRefactored()
+    
     Dim startTime As Single
     Dim endTime  As Single
 
@@ -309,8 +310,6 @@ Now looking at the actual results of the stock performance between 2017 and 2018
 As seen above, it is clear that in 2017 DQ had the highest return and most every stock, except for TERP, had a positve return. As for 2018, only ENPH and RUN had a positive return. Although RUN only had a 5.5% return in 2017, they did have a 81.9% return in 2018, and ENPH had 129.5% in 2017 and a 81.9% return in 2018.
 
 ## Summary
-
-Summary: In a summary statement, address the following questions.
 
 ### Advantages and Disadvantages of General Code Refactoring
 
